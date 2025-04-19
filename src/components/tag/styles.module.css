@@ -1,0 +1,12 @@
+.tag {
+  border-color: var(--ant-color-text-description);
+  border-radius: 50vh;
+  background: transparent;
+  padding-block: 2px;
+  color: var(--ant-color-text-description);
+}
+
+.count {
+  margin-left: 10px;
+  color: var(--ant-tag-default-color);
+}

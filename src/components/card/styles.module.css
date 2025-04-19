@@ -1,0 +1,162 @@
+.card {
+  max-width: 845px;
+  --ant-color-bg-container: transparent;
+
+  :global(.ant-card-head) {
+    border: none;
+    padding: 16px;
+  }
+
+  :global(.ant-card-head-wrapper) {
+    gap: 16px;
+  }
+
+  :global(.ant-flex) {
+    gap: 12px;
+  }
+
+  :global(.ant-card-body) {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 16px 16px;
+  }
+}
+
+.info {
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 12px;
+
+  :global(.ant-typography) {
+    --ant-font-size: 12px;
+  }
+}
+
+.value {
+  color: #fff;
+}
+
+.title:global(.ant-typography) {
+  margin: 0;
+  color: #0772cb;
+  text-wrap: auto;
+}
+
+.address {
+  flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 12px;
+
+  :global(.ant-typography) {
+    --ant-font-size: 12px;
+  }
+}
+
+.url {
+  --ant-link-decoration: underline;
+}
+
+.description {
+  font-size: 13px;
+
+  &:global(.ant-typography) {
+    margin-bottom: 16px;
+  }
+
+  :global(.ant-typography-expand),
+  :global(.ant-typography-collapse) {
+    display: block;
+    margin: 5px 0 0;
+  }
+}
+
+.keywords {
+  --row-gap: 10px;
+  display: flex;
+  row-gap: var(--row-gap);
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+
+  &:global(.ant-typography) {
+    margin-bottom: 16px;
+  }
+
+  & > span[aria-hidden="true"]:last-of-type {
+    font-size: 0;
+  }
+
+  & > button {
+    font-size: 12px;
+  }
+}
+
+:global(.ant-card-extra) {
+  display: flex;
+  align-self: flex-start;
+  gap: 8px;
+  height: 16px;
+  font-weight: 300;
+
+  .extra_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 0;
+    aspect-ratio: 1 / 1;
+    width: fit-content;
+    height: 100%;
+    color: var(--ant-color-text);
+  }
+
+  .extra_tag {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #000;
+    text-transform: capitalize;
+  }
+
+  .extra_checkbox {
+    height: 100%;
+
+    :global(.ant-checkbox) {
+      height: 100%;
+    }
+  }
+
+  :global(.ant-checkbox-inner) {
+    border: solid 2px;
+    border-radius: 0;
+    background: transparent;
+    aspect-ratio: 1 / 1;
+    width: fit-content;
+    height: 100%;
+  }
+}
+
+.source:global(.ant-typography) {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background: #302e3b;
+  padding: 6px 8px;
+  width: fit-content;
+}
+
+.duplicates_count {
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+.duplicates_select {
+  :global(.ant-select-selection-item) {
+    margin-right: 8px;
+    color: var(--ant-color-text-description);
+    font-weight: 300;
+  }
+}
+
+.duplicates_button:global(.ant-btn-background-ghost) {
+  border-color: var(--ant-color-text-description);
+  padding-block: 20px;
+}
